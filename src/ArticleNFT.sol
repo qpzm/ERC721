@@ -4,8 +4,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ArticleNFT is Ownable, ERC721URIStorage {
-    constructor() ERC721("ArticleNFT", "ARTICLE") {}
-    uint256 totalMinted;
+    constructor() ERC721("ArticleNFT", "ARTICLE");
+
+    uint256 public totalMinted;
 
     function mint(address _receiver, string memory _uri) public onlyOwner {
         uint256 currentId = totalMinted;
