@@ -299,12 +299,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prb/foundry-template@workspace:.":
+"@openzeppelin/contracts@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@openzeppelin/contracts@npm:4.8.0"
+  checksum: dfab51a7f91735cfb1e94dd5074736b0dac0207e4ebf26eb46b32defd3b67adce5a36b248daa7b841c21be74863c1e37cf92ed194a9c36d3f8c5326d1a24242a
+  languageName: node
+  linkType: hard
+
+"@qpzm/ERC721@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@prb/foundry-template@workspace:."
+  resolution: "@qpzm/ERC721@workspace:."
   dependencies:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
+    "@openzeppelin/contracts": ^4.8.0
     commitizen: ^4.2.5
     cz-conventional-changelog: ^3.3.0
     husky: ^8.0.1
