@@ -4,7 +4,8 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ArticleNFT is Ownable, ERC721URIStorage {
-    constructor() ERC721("ArticleNFT", "ARTICLE");
+    /* solhint-disable no-empty-blocks */
+    constructor() ERC721("ArticleNFT", "ARTICLE") {}
 
     uint256 public totalMinted;
 
